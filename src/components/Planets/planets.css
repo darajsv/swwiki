@@ -1,0 +1,35 @@
+.planetsMain {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.planetImg img {
+  position: absolute;
+  top: 2rem;
+  width: 24%;
+}
+.titleSection {
+  font-size: 4rem;
+  color: white;
+}
+.titleSection h1 {
+  margin-top: 2rem;
+  margin-bottom: 0rem;
+  margin-right: 0;
+  background-color: black;
+  width: fit-content;
+}
+.description {
+  margin-top: 6rem;
+  margin-right: 2rem;
+}
+.description h3 {
+  color: white;
+  margin: 0;
+  text-align: left;
+  background-color: black;
+  width: fit-content;
+}
+.header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}

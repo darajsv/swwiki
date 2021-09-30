@@ -1,0 +1,26 @@
+.titleMain {
+  color: white;
+  font-family: monospace;
+  padding: auto;
+  vertical-align: middle;
+}
+.titleMain h1 {
+  font-size: 10em;
+  text-align: center;
+  margin-bottom: 0;
+}
+.titleMain h3,
+.titleMain h5 {
+  text-align: center;
+  margin: 3px;
+}
+.titleMain a {
+  color: white;
+  text-decoration: none;
+  border-bottom: white solid 1px;
+}
+.cardSection {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(6, 15rem);
+}
