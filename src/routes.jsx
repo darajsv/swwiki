@@ -8,8 +8,8 @@ const Routes = () => {
   return (
     <Switch>
       <Route exact path="/" component={Title} />
-      <Route path="/planets" component={Planets} />
-      <Route exact path="/planets/:id" component={IndividualPlanet} />
+      <Route exact path="/planets" component={Planets} />
+      <Route path={`/planets/:planetId`} component={IndividualPlanet} />
       <Redirect from="*" to="/" />
     </Switch>
   );

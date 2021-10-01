@@ -5,7 +5,6 @@ import SelectCard from "./planetSelectCard/SelectCard.jsx";
 import { Component } from "react";
 import api from "../../services/api.js";
 
-
 class Planets extends Component {
   constructor(props) {
     super(props);
@@ -100,17 +99,14 @@ class Planets extends Component {
     }
     return <div>{arrow}</div>;
   }
- 
+
   renderSelectCards() {
     return this.state.list.results?.map((items) => {
-      const planetID = items.url.split("/").reverse()[1]
-      console.log(planetID);
-      return(
-        <SelectCard key={planetID} id={planetID} name={items.name} />
-      )
-      });
+      const planetID = items.url.split("/").reverse()[1];
+      return <SelectCard key={planetID} id={planetID} name={items.name} />;
+    });
   }
-  
+
   render() {
     return (
       <div className="planetsMain">
