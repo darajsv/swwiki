@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { useHistory, useParams } from "react-router";
 import api from "../../../services/api.js";
 import "./individualPlanet.css";
 
 const IndividualPlanet = () => {
   const params = useParams();
   const [data, setData] = useState([]);
+  let history = useHistory();
+  
+  const toggleRandomPlanet = () => {
+    let randomId = Math.floor(Math.random() * 61);
+    history.replace(`/planets/${randomId}`);
+  }
 
   useEffect(() => {
     api
@@ -32,6 +38,9 @@ const IndividualPlanet = () => {
         <h5> Terrain: {data.terrain} </h5>
         <h5> Surface Water: {data.surface_water} </h5>
         <h5> Population: {data.population}</h5>
+      </div>
+      <div className='buttonSection'>
+        <button type='button' onClick={toggleRandomPlanet}>Transport to a random Planet</button>
       </div>
     </div>
   );
