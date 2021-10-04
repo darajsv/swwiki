@@ -4,16 +4,16 @@ import api from '../../../services/api.js'
 import './individualPlanet.css'
 
 const IndividualPlanet = () => {
-    let params = useParams();
-    let [data, setData] = useState([]);
+    const params = useParams();
+    const [data, setData] = useState([]);
     
     useEffect(() => {
-        api.get(`/planets/${params.planetId}`).then((response) => {
+        api.get(`/planets/${params.planetId}/`).then((response) => {
             setData(response.data);
         }).catch((err) => {
             console.error(err);
-        }, [])
-    })
+        })
+    }, [params.planetId, setData])
 
         return(
             <div className='individualPlanet'>

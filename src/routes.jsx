@@ -1,9 +1,9 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router";
-
+import { Switch, Route, Redirect } from 'react-router'; 
 import Title from "./components/TitleScreen/Title.jsx";
 import Planets from "./components/Planets/Planets.jsx";
 import IndividualPlanet from "./components/Planets/individualPlanet/IndividualPlanet.jsx";
+
 const Routes = () => {
   return (
     <Switch>
