@@ -14,13 +14,17 @@
   text-align: center;
   margin: 3px;
 }
-.titleMain a {
+.titleDescription a {
   color: white;
-  text-decoration: none;
-  border-bottom: white solid 1px;
+  text-decoration: underline white;
 }
 .cardSection {
+  justify-content: center;
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(6, 15rem);
+  grid-template-columns: repeat(6, 13rem);
+}
+.cardSection a {
+  color: white;
+  text-decoration: none;
 }

@@ -1,10 +1,13 @@
 .individualPlanet {
   color: white;
   text-align: center;
-  border-bottom: 5px yellow solid;
 }
 .planetName {
   font-size: 4rem;
+  text-decoration: underline yellow;
+}
+.planetName h1 {
+  margin-bottom: 1rem;
 }
 .informationCard {
   border: 5px yellow solid;

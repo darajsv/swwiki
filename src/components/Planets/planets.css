@@ -35,12 +35,12 @@
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(5, 20%);
 }
 .selectcardSection {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 10% 80% 10%;
 }
 .arrow {
   font-size: 7rem;
