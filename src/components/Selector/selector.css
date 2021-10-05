@@ -1,0 +1,18 @@
+.selector_main .header {
+  color: white;
+  font-size: 4rem;
+}
+.selector_content {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+.selector_cards {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+.selector_arrow {
+  font-size: 7rem;
+  color: white;
+  margin: auto;
+  cursor: pointer;
+}
