@@ -57,7 +57,7 @@ const Selector = (props) => {
 
   return (
     <div className='selector_main'>
-      <div className='header'>
+      <div className='selector_header'>
         <h1>{props.title}</h1>
       </div>
       <div className='selector_content'>

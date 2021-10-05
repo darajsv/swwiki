@@ -1,18 +1,53 @@
-.selector_main .header {
+.selector_main {
+  margin: auto;
+}
+.selector_header h1 {
   color: white;
-  font-size: 4rem;
+  font-size: 9rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: black;
+  width: fit-content;
 }
 .selector_content {
+  margin: auto;
   display: grid;
   grid-template-columns: 10% 80% 10%;
 }
 .selector_cards {
   display: grid;
   grid-template-columns: repeat(5, 20%);
+  column-gap: 2rem;
+  margin: auto;
+  justify-content: center;
 }
 .selector_arrow {
   font-size: 7rem;
   color: white;
   margin: auto;
   cursor: pointer;
+}
+@media screen and (max-width: 1025px) {
+  .selector_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 34%);
+  }
+
+  .selector_header h1 {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 415px) {
+  .selector_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 1rem;
+  }
+  .selector_header h1 {
+    font-size: 5rem;
+  }
+  .selector_arrow {
+    font-size: 5rem;
+  }
 }
