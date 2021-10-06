@@ -28,3 +28,27 @@
   color: white;
   text-decoration: none;
 }
+@media screen and (max-width: 1025px) {
+  .cardSection {
+    grid-template-columns: repeat(3, 33%);
+    margin-left: 7rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .cardSection {
+    margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 415px) {
+  .titleMain {
+    margin-left: 3rem;
+  }
+  .titleDescription {
+    margin-left: 5rem;
+  }
+  .cardSection {
+    margin-left: 5rem;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 2rem;
+  }
+}

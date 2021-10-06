@@ -1,18 +1,21 @@
-import React from 'react'
-import './title.css'
-import Card from './TitlePageCard/Card.jsx'
-import images from '../../assets/img/titleScreenImg/deathStar.jpg'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './title.css';
+import Card from './TitlePageCard/Card.jsx';
+import images from '../../assets/img/titleScreenImg/deathStar.jpg';
+import { Link } from 'react-router-dom';
 
 const Title = () => {
   return (
     <div className='titleMain'>
       <div>
         <h1>SWWIKI</h1>
-        <h3>A Star Wars Wiki</h3>
-        <h5 className='titleDescription'>
-          integrated with <a href='https://swapi-trybe.herokuapp.com/'>swapi</a>
-        </h5>
+        <div className='titleDescription'>
+          <h3>A Star Wars Wiki</h3>
+          <h5>
+            integrated with{' '}
+            <a href='https://swapi-trybe.herokuapp.com/'>swapi</a>
+          </h5>
+        </div>
       </div>
       <div className='cardSection'>
         <Link to='/planets'>
@@ -35,7 +38,7 @@ const Title = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Title
+export default Title;
